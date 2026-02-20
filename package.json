@@ -4,7 +4,8 @@
   "description": "a basic app to deploy",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/Priyasaha7/Learning_Node_2.js/issues"
   },
-  "homepage": "https://github.com/Priyasaha7/Learning_Node_2.js#readme"
+  "homepage": "https://github.com/Priyasaha7/Learning_Node_2.js#readme",
+  "dependencies": {
+    "express": "^5.2.1"
+  }
 }
