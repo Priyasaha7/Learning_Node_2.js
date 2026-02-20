@@ -3,10 +3,18 @@ require("dotenv").config();
 //console.log(process.env)
 
 const app = express();
-const port = 3000;
+const port = process.env.PORT;
 
 app.get("/", (req, res) => {
   res.send("Hello World!");
+});
+
+app.get("/about", (req, res) => {
+  res.send("This is the about page");
+});
+
+app.get("/twitter", (req, res) => {
+  res.send("This is the twitter page");
 });
 
 app.listen(port, () => {
